@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<title>Devon Farm</title>
+<meta name="TWH" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -45,6 +49,72 @@
       </form> -->
     </div>
   </nav>
+  
 </body>
-
+<div class="w3-container">
+    <h2>Devon Farm First Pic Attempt</h2>
+    <p>Click on the images below:</p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col s3 w3-container">
+    <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+      <img src="https://lh3.googleusercontent.com/I6OEWqtyrk8hlz1TgOtghtkwEiT8l64KjFNKvJbFliNdZd0400oiyANMja47sdLLJAiLT-MlA8T-xmlsOgcDi7DjJpiXwvOsnxcic0MktGqoNPcrPuwZ_VFM9vY2N9-W6b1GO2M1=w2400" alt="Panda" style="width:40%">
+    </a>
+    </div>
+    <div class="w3-col s3 w3-container">
+      <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+        <img src="https://lh3.googleusercontent.com/8v-iq5MvG4c_GnuaKB7fYMHl4QmUpsHZEadc9LWfvWp6gTO9rHfuNMOMlXD0UUZSOeyfes-BsjkBTWBXiSd0z8BlvKyfDgpQIiLBDPREUtSAdh5la-ABGdc7jw21GXLlTvjlfGH1=w2400" alt="PandaPed" style="width:40%">
+      </a>
+    </div>
+    <div class="w3-col s3 w3-container">
+      <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+        <img src="https://lh3.googleusercontent.com/vzsDnJK4perrros7neAlvkNmY46xrdAXLmAwdjii2z7UaI0LSGmC_ifFrOWVlwGnHxEVRKknb-5_tIjxbIAxxk2Dg2Awa3Mo9OfopoTkao1mVOoT27jtD_02CJ6nq8SETgM9aJEZ=w2400" alt="Luna" style="width:40%">
+      </a>
+    </div>
+    <div class="w3-col s3 w3-container">
+      <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+        <img src="https://lh3.googleusercontent.com/sbAX9juEHAzkMVOdHAsjz1BZ4GfxOCML5lEFAevWdWHSgN_VC0xI6oHwdU_lJZZFbdpmAXKyKcs4p3JiNLqtRb4KFt9s36XWuFqnTP_Dd8_K7Gj2Nmr1oNTT5qAwF3StUnJKeGRv=w2400" alt="PandaRide" style="width:40%">
+      </a>
+    </div>
+  </div><br>
+  
+  <div id="Nature" class="picture w3-display-container" style="display:none">
+    <img src="https://lh3.googleusercontent.com/I6OEWqtyrk8hlz1TgOtghtkwEiT8l64KjFNKvJbFliNdZd0400oiyANMja47sdLLJAiLT-MlA8T-xmlsOgcDi7DjJpiXwvOsnxcic0MktGqoNPcrPuwZ_VFM9vY2N9-W6b1GO2M1=w2400" alt="Panda" style="width:60%">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+    <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Panda</div>
+  </div>
+  
+  <div id="Snow" class="picture w3-display-container" style="display:none">
+    <img src="https://lh3.googleusercontent.com/8v-iq5MvG4c_GnuaKB7fYMHl4QmUpsHZEadc9LWfvWp6gTO9rHfuNMOMlXD0UUZSOeyfes-BsjkBTWBXiSd0z8BlvKyfDgpQIiLBDPREUtSAdh5la-ABGdc7jw21GXLlTvjlfGH1=w2400" alt="PandaPed" style="width:60%">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+    <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Panda Ped</div>
+  </div>
+  
+  <div id="Mountains" class="picture w3-display-container" style="display:none">
+    <img src="https://lh3.googleusercontent.com/vzsDnJK4perrros7neAlvkNmY46xrdAXLmAwdjii2z7UaI0LSGmC_ifFrOWVlwGnHxEVRKknb-5_tIjxbIAxxk2Dg2Awa3Mo9OfopoTkao1mVOoT27jtD_02CJ6nq8SETgM9aJEZ=w2400" alt="Luna" style="width:60%">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-display-topright w3-button w3-transparent">&times;</span>
+    <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Luna</div>
+  </div>
+  
+  <div id="Lights" class="picture w3-display-container" style="display:none">
+    <img src="https://lh3.googleusercontent.com/sbAX9juEHAzkMVOdHAsjz1BZ4GfxOCML5lEFAevWdWHSgN_VC0xI6oHwdU_lJZZFbdpmAXKyKcs4p3JiNLqtRb4KFt9s36XWuFqnTP_Dd8_K7Gj2Nmr1oNTT5qAwF3StUnJKeGRv=w2400" alt="PandaRide" style="width:60%">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+    <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Panda Ride</div>
+  </div>
+  
+  <script>
+  function openImg(imgName) {
+    var i, x;
+    x = document.getElementsByClassName("picture");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(imgName).style.display = "block";
+  }
+  </script>
 </html>
