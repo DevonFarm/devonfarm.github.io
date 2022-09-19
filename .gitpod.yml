@@ -1,0 +1,7 @@
+tasks:
+  - init: sudo apt-get install busybox
+    command: sudo busybox httpd :8080 -h ./
+ports:
+  - port: 80
+    visibility: private
+    onOpen: open-browser
