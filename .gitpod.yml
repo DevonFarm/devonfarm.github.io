@@ -1,6 +1,5 @@
 tasks:
-  - init: sudo apt-get install busybox
-    command: sudo busybox httpd :8080 -h ./
+  - command: sudo apt-get install busybox && sudo busybox httpd :8080 -h ./
 ports:
   - port: 80
     visibility: private
